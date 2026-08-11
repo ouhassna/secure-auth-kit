@@ -1,0 +1,40 @@
+{
+  "name": "secure-auth-kit",
+  "version": "1.0.0",
+  "description": "A production-ready, drop-in authentication backend with security best practices built in: JWT + refresh tokens, account lockout, rate limiting, RBAC, and more.",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "test": "NODE_ENV=test jest --runInBand --forceExit",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "keywords": ["auth", "jwt", "security", "express", "nodejs"],
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
+    "testTimeout": 15000
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "otplib": "^12.0.1",
+    "nodemailer": "^6.9.14",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.18.0",
+    "supertest": "^7.0.0"
+  }
+}
