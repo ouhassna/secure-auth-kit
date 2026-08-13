@@ -80,7 +80,7 @@ Protected routes additionally pass through `verifyAuth` (checks JWT) and optiona
 Requires [Docker](https://www.docker.com/) — nothing else needs to be installed locally.
 
 ```bash
-git clone https://github.com/<your-username>/secure-auth-kit.git
+git clone https://github.com/ouhassna/secure-auth-kit/secure-auth-kit.git
 cd secure-auth-kit
 cp .env.example .env
 docker compose up --build
@@ -158,3 +158,6 @@ Node.js · Express · PostgreSQL · Prisma · JWT · Zod · bcrypt · otplib (TO
 Built by HASSNA OUATTOU — backend engineer specializing in secure, well-tested API systems. eJPT-certified in penetration testing.
 
 Open to backend engineering roles — freelance or full-time. Building something and want the backend done securely from day one? 
+
+![Database schema](docs/secure_auth_kit_full_overview.png)
+![Database schema](docs/secure-auth-kit.png)
